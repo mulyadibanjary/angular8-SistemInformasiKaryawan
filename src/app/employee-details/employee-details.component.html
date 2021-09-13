@@ -1,0 +1,21 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Detail Karyawan</h2>
+        <hr>
+    </div>
+    <div class="panel-body">
+        <div>
+            <label><b>Nama Depan : </b></label> {{employee.firstName}}
+        </div>
+        <div>
+            <label><b>Nama Belakang : </b></label> {{employee.lastName}}
+        </div>
+        <div>
+            <label><b>Email : </b></label> {{employee.emailId}}
+        </div>
+        <br>
+        <br>
+        <button (click)="goToList()" type="button" class="btn btn-primary" style="margin-left: 10px;">Kembali ke list</button>
+    </div>
+
+</div>

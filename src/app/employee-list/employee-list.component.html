@@ -1,0 +1,29 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Daftar Karyawan</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Nama Depan</td>
+                    <td>Nama Belakang</td>
+                    <td>Email</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let karyawan of employeeList | async">
+                    <td>{{karyawan.firstName}}</td>
+                    <td>{{karyawan.lastName}}</td>
+                    <td>{{karyawan.emailId}}</td>
+                    <td>
+                        <button (click)="goToDetail(karyawan.id)" type="button" class="btn btn-primary" style="margin-left: 10px;">Detail</button>
+                        <button (click)="goToEdit(karyawan.id)" type="button" class="btn btn-primary" style="margin-left: 10px;">Edit</button>
+                        <button (click)="deleteData(karyawan.id)" type="button" class="btn btn-danger" style="margin-left: 10px;">Hapus</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

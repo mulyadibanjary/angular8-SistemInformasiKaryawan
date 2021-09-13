@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+	<ul class="navbar-nav">
+		<li  class="nav-item">
+			<a routerLink="employees" class="nav-link" routerLinkActive="active">Daftar Karyawan</a>
+		</li>
+		<li  class="nav-item">
+			<a routerLink="add" class="nav-link" routerLinkActive="active">Tambah Karyawan</a>
+		</li>
+	</ul>
+</nav>
+<div class="container">
+	<br/>
+	<h2 style="text-align:center">{{ title }}</h2>
+	<hr/>
+	<div class="card">
+		<div class="card-body">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<span>Hak Cipta Bebas Lho @2021</span>
+	</div>
+</footer>
+
+
+
